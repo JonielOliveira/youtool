@@ -122,7 +122,7 @@ from youtool.utils import simplify_vtt
 input_filename = f"/content/transcricoes/{videos_ids[0]}.pt.vtt"
 output_filename = f"/content/transcricoes/{videos_ids[0]}_simplified.txt"
 
-with open(filename) as fobj:
+with open(input_filename) as fobj:
   vtt = fobj.read()
 simplified = simplify_vtt(vtt)
 
